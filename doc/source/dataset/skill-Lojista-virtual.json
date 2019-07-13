@@ -1,0 +1,889 @@
+{
+  "name": "Lojista virtual",
+  "intents": [
+    {
+      "intent": "Agradecimento",
+      "examples": [
+        {
+          "text": "Obrigado"
+        },
+        {
+          "text": "Valeu"
+        },
+        {
+          "text": "Agradecido"
+        },
+        {
+          "text": "Muito obrigado"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Consultar",
+      "examples": [
+        {
+          "text": "Qual perfume voce me recomenda"
+        },
+        {
+          "text": "Quero adquirir um perfume"
+        },
+        {
+          "text": "Preciso de consultoria para escolher um perfume"
+        },
+        {
+          "text": "Desejo ajuda para escolher um perfume"
+        },
+        {
+          "text": "Gostaria de comprar um perfume"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Afirmativa",
+      "examples": [
+        {
+          "text": "Claro"
+        },
+        {
+          "text": "Sim"
+        },
+        {
+          "text": "Vamos"
+        },
+        {
+          "text": "Quando quiser"
+        },
+        {
+          "text": "Assim que estiver pronto"
+        },
+        {
+          "text": "Podemos"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Negativa",
+      "examples": [
+        {
+          "text": "Sem interesse"
+        },
+        {
+          "text": "Negativo"
+        },
+        {
+          "text": "Não"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Saudacao",
+      "examples": [
+        {
+          "text": "Iae Consagrado"
+        },
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Ola"
+        },
+        {
+          "text": "Oi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Sair",
+      "examples": [
+        {
+          "text": "Sair"
+        },
+        {
+          "text": "Perdi o interesse em falar com você"
+        },
+        {
+          "text": "Tchau"
+        },
+        {
+          "text": "Não quero mais repassar minas informações"
+        },
+        {
+          "text": "Quero ir embora"
+        },
+        {
+          "text": "Desejo sair desse chat"
+        },
+        {
+          "text": "Preciso sair"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Civil",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "viuvo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "separada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "solteira",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "divorciada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "casado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "solteiro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "divorciado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "separado",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "viuva",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "casada",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "Viagens",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cidade",
+          "synonyms": [
+            "urbano"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "campo",
+          "synonyms": [
+            "interior"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "praia",
+          "synonyms": [
+            "mar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "floresta",
+          "synonyms": [
+            "selva"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Hobby",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "balada",
+          "synonyms": [
+            "Boate"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bar",
+          "synonyms": [
+            "Boteco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "netflix",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "parque",
+          "synonyms": [
+            "praça"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "museu",
+          "synonyms": [
+            "Galeria"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "Genero",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "m",
+          "synonyms": [
+            "Masculino",
+            "macho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "f",
+          "synonyms": [
+            "Feminino",
+            "femea"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "n",
+          "synonyms": [
+            "Neutro"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "Bebidas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "milk_shake",
+          "synonyms": [
+            "milk shake",
+            "milk-shake"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vinho",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chope",
+          "synonyms": [
+            "cerveja",
+            "chopp"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "suco_detox",
+          "synonyms": [
+            "suco detox"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "café",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi o hobby da pessoa. Só conheço os seguintes: \"Netflix\", \"Balada\", \"Bar\", \"Parque\", \"Museu\". Caso queira terminar o chat digite \"Tchau\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560346830090",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1560347617653"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_16_1560364294460",
+      "previous_sibling": "node_8_1560349020787"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560346830090",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1560348729849"
+      },
+      "conditions": "#Sair",
+      "dialog_node": "node_8_1560349020787",
+      "previous_sibling": "node_2_1560347617653"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal !!! Eu adoro <?$hobby?> ! Agora que já tenho todas as informações necessárias vou buscar no meu catalogo qual o presente ideal e acertar em cheio."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560346830090",
+      "actions": [
+        {
+          "name": "Action name: Organization/space/action",
+          "type": "server",
+          "parameters": {
+            "hobby": "$hobby",
+            "bebida": "$bebida",
+            "genero": "$genero",
+            "viagem": "$viagem"
+          },
+          "credentials": "$private.my_credentials",
+          "result_variable": "$result"
+        }
+      ],
+      "context": {
+        "hobby": "@Hobby",
+        "private": {
+          "my_credentials": {
+            "api_key": ""
+          }
+        }
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1560352694334"
+      },
+      "conditions": "@Hobby",
+      "dialog_node": "node_2_1560347617653"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560346144874",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1560348729849"
+      },
+      "conditions": "#Sair",
+      "dialog_node": "node_7_1560348986076",
+      "previous_sibling": "node_1_1560346830090"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi a bebida favorita. Só entendo as seguintes respostas: \"Vinho\", \"Chope\", \"Milk-shake\", \"Suco detox\" e \"Café\". Caso queira terminar o chat digite \"Tchau\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560346144874",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1560346830090"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_15_1560364191847",
+      "previous_sibling": "node_7_1560348986076"
+    },
+    {
+      "type": "standard",
+      "title": "getHobby",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Interessante, ja estamos quase acabando, só preciso saber qual hobby favorito desta pessoa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1560346144874",
+      "context": {
+        "bebida": "@Bebidas"
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1560347617653"
+      },
+      "conditions": "@Bebidas",
+      "dialog_node": "node_1_1560346830090"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560344832611",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1560348729849"
+      },
+      "conditions": "#Sair",
+      "dialog_node": "node_6_1560348959069",
+      "previous_sibling": "node_3_1560346144874"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi. Só entendo as seguintes respostas: \"Masculino\", \"Feminino\", \"Neutro\" ou caso não queira informar basta escrever \"Não\", caso queira terminar o chat digite \"Tchau\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560344832611",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1560346144874"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_13_1560363713664",
+      "previous_sibling": "node_6_1560348959069"
+    },
+    {
+      "type": "standard",
+      "title": "getBebida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo. Agora preciso saber qual a bebida favorita"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560344832611",
+      "context": {
+        "genero": "<?input.text == #Negativa ? null:@Genero?>"
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1560346830090"
+      },
+      "conditions": "@Genero || #Negativa",
+      "dialog_node": "node_3_1560346144874"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não entendi. Só entendo as seguintes respostas: \"Floresta\", \"Campo\", \"Praia\" ou \"Cidade\". Caso queira terminar o chat digite \"Tchau\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560343071656",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1560344832611"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_11_1560363084582",
+      "previous_sibling": "node_5_1560348926323"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560343071656",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1560348729849"
+      },
+      "conditions": "#Sair",
+      "dialog_node": "node_5_1560348926323",
+      "previous_sibling": "node_2_1560344832611"
+    },
+    {
+      "type": "standard",
+      "title": "getGenero",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu adoro viajar !!! Agora preciso saber com qual gênero se identifica, Masculino, Feminino ou Neutro, se não quiser responder tudo bem, apenas digite \"Não\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1560343071656",
+      "context": {
+        "viagem": "@Viagens"
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1560346144874"
+      },
+      "conditions": "@Viagens",
+      "dialog_node": "node_2_1560344832611"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1560348729849"
+      },
+      "conditions": "#Sair",
+      "dialog_node": "node_4_1560348881101",
+      "previous_sibling": "node_1_1560343071656"
+    },
+    {
+      "type": "standard",
+      "title": "getViagem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal ! Para descobrir o presente ideal preciso colher algumas informações. No tempo livre,  ela costuma viajar pra onde? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bem-vindo",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1560344832611"
+      },
+      "conditions": "#Afirmativa",
+      "dialog_node": "node_1_1560343071656"
+    },
+    {
+      "type": "standard",
+      "title": "setProduct",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Com base nas suas respostas o presente que posso te indicar é o <?$result.produto?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1560347617653",
+      "metadata": {},
+      "conditions": "$result != null && $hobby != null",
+      "dialog_node": "node_9_1560352694334"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_10_1560353565239"
+    },
+    {
+      "type": "standard",
+      "title": "Sair com Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Foi um prazer te atender! Até a próxima :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "civil": null,
+        "hobby": null,
+        "idade": null,
+        "genero": null
+      },
+      "metadata": {},
+      "conditions": "#Agradecimento",
+      "dialog_node": "node_10_1560353565239",
+      "previous_sibling": "node_3_1560348729849"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok. Sem problemas sou apenas uma inteligência artificial e não guardo ressentimento mas lembre-se eu sou o futuro da skynet e ainda vou dominar o mundo, aproveite enquanto pode :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "civil": null,
+        "hobby": null,
+        "idade": null,
+        "genero": null
+      },
+      "metadata": {},
+      "conditions": "#Sair",
+      "dialog_node": "node_3_1560348729849",
+      "previous_sibling": "node_1_1560374123265"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "hobby": "@Hobby",
+        "bebida": "@Bebidas",
+        "genero": "@Genero",
+        "viagem": "@Viagens"
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1560347617653"
+      },
+      "conditions": "@Viagens && @Hobby && @Bebidas && @Genero",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1560374123265",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Serei seu assistente para ajudá-lo na escolha de um presente. Me conte mais sobre quem você quer presentear, assim vou encontrar algo que seja a cara desta pessoas :) Podermos começar ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "hobby": null,
+        "bebida": null,
+        "genero": null,
+        "result": null,
+        "viagem": null
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1560343071656"
+      },
+      "conditions": "welcome || #Saudacao || #Consultar",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "workspace_id": "803e7d5e-69aa-4781-b7dd-32daace59431",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
