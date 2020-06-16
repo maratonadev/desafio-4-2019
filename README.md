@@ -17,6 +17,7 @@
     * [9.1. Veja como configurar o IBM Continuous Delivery](#9-1-veja-como-configurar-o-ibm-continuous-delivery)
     * [9.2. Credenciais na aplicação](#9-2-credenciais-na-aplicação)
 * [10. Submissão](#10-submissão)
+* [11. Modelo](#11-modelo)
 
 ## Para te ajudar
 
@@ -291,6 +292,10 @@ Através da aplicação na IBM Cloud (`https://<maratona-id>-desafio4-behindthec
 </div>
 
 FIQUEM LIGADOS NO [SITE DA MARATONA](ibm.biz/maratona) PARA ACOMPANHAR O RANKING GERAL E O RANKING DO DESAFIO! FIQUE NA TORCIDA PARA ESTAR ENTRE OS MELHORES!
+
+## 11. Modelo
+
+Você pode verificar um modelo de solução [aqui](http://586586586-desafio4-behindthecode.mybluemix.net/).
 
 ## Material de apoio
 
